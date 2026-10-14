@@ -255,7 +255,7 @@ const gce2026Students = [
     match: "رهام الربضي",
     fullName: "رهام سمير الربضي",
 
-    modalAvatar: "19.png",
+    modalAvatar: "19.png", 
 
     projectLogo: "رهام الربضي.jpeg",
 
