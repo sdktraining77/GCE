@@ -254,13 +254,9 @@ const gce2026Students = [
   {
     match: "رهام الربضي",
     fullName: "رهام سمير الربضي",
-
-    modalAvatar: "19.png", 
-
+    modalAvatar: "49.png",
     projectLogo: "رهام الربضي.jpeg",
-
     project: "GrowSmart | نماء",
-
     description:
       "GrowSmart هو نظام ذكي للتوصية بالمحاصيل، صُمم لجعل تجربة الزراعة أكثر سهولة ومتعة ومتاحة للجميع، وليس فقط للمزارعين أو لأصحاب الأراضي الزراعية الكبيرة.",
 
@@ -271,27 +267,29 @@ const gce2026Students = [
     match: "مؤمن العمري",
     fullName: "مؤمن حسن العمري",
 
-    modalAvatar: "",
+    modalAvatar: "66.png",
 
     projectLogo: "مؤمن العمري.jpeg",
 
-    project: "Booking System",
+    project: "ملعبك",
 
     description:
       "هو منصة ويب متكاملة تم تطويرها باستخدام تقنيات MERN Stack بهدف أتمتة وتسهيل عملية حجز الملاعب الرياضية من خلال ربط اللاعبين بأصحاب الملاعب مباشرة.",
 
-    socials: {}
+    socials: {
+      linkedin: "https://www.linkedin.com/in/‏momen-al-omari-99a217354?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+    }
   },
 
   {
     match: "لانا ايوب",
     fullName: "لانا حسام ايوب",
 
-    modalAvatar: "",
+    modalAvatar: "60.png",
 
     projectLogo: "لانا الربضي.jpeg",
 
-    project: "دعم المشاريع الصغيرة",
+    project: "بيّنة",
 
     description:
       "منصة ذكية لدعم أصحاب المشاريع الصغيرة والمتوسطة في الأردن باستخدام الذكاء الاصطناعي وتحليل البيانات.\n\nتساعد المنصة المستخدم على تقييم أداء مشروعه، وتحديد نقاط القوة والضعف، وتحليل السوق والموقع، ومتابعة المؤشرات المالية والتشغيلية وآراء العملاء.",
@@ -306,11 +304,11 @@ const gce2026Students = [
     match: "اسامة طشطوش",
     fullName: "أسامة طشطوش",
 
-    modalAvatar: "",
+    modalAvatar: "44.png",
 
     projectLogo: "أسامة طشطوش.PNG",
 
-    project: "Network Project",
+    project: "درع",
 
     description:
       "نظام شبكات ذكي يهدف إلى الحفاظ على استمرارية الشبكة وأمانها من خلال استخدام اتصالين بالإنترنت (Dual ISP) لضمان الاستمرارية، وشبكة VPN للاتصال الآمن، وأنظمة IDS لاكتشاف التهديدات والاستجابة لها بشكل آلي.",
@@ -322,36 +320,32 @@ const gce2026Students = [
     match: "شكري عدنان",
     fullName: "شكري عدنان محمد",
 
-    modalAvatar: "",
+    modalAvatar: "53.png",
 
     projectLogo: "شكري عدنان.jpeg",
 
-    project: "Web Development Project",
+    project: "Clinic JO",
 
     description:
       "منصة إلكترونية تهدف إلى تسهيل عملية الوصول إلى الأطباء والخدمات الطبية المتوفرة في العيادة، وحجز المواعيد بطريقة رقمية ومنظمة دون الحاجة إلى زيارة العيادة فقط من أجل الاستفسار أو الحجز.\n\nتعالج المنصة مشكلة شائعة تتمثل في ضياع وقت المريض وصعوبة معرفة الأطباء والخدمات المتاحة قبل التوجه إلى العيادة، بالإضافة إلى عدم القدرة على معرفة تفاصيل الخدمة أو سعرها مسبقًا في بعض الحالات.",
 
     socials: {
       linkedin:
-        "https://www.linkedin.com/in/shokri-samara-193a00367?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+        "https://www.linkedin.com/in/shokri-samara-193a00367?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+      github: "https://github.com/Shokri2"
     }
   },
 
   {
     match: "جلنار مهيدات",
     fullName: "جلنار علي مهيدات",
-
-    modalAvatar: "",
-
+    modalAvatar: "46.png",
     projectLogo:
       "جلنار علي مهيدات.png",
-
     project:
       "CCNP Enterprise Network Architecture",
-
     description:
       "This project designs and implements a secure, scalable CCNP Enterprise Network simulated in EVE-NG. The architecture delivers high-speed inter-domain connectivity and robust security controls.\n\nIt incorporates hierarchical IP Addressing, OSPF for internal routing, eBGP between Autonomous Systems, and GRE over IPsec VPN tunnels filtered with ACLs.",
-
     socials: {}
   },
 
@@ -359,7 +353,7 @@ const gce2026Students = [
     match: "سيف جبرين",
     fullName: "سيف ايمن جبرين",
 
-    modalAvatar: "",
+    modalAvatar: "52.png",
 
     projectLogo: "سيف ايمن جبرين.png",
 
@@ -369,14 +363,16 @@ const gce2026Students = [
     description:
       "Amanak Alraqami is an interactive digital safety education platform designed for children aged 8–14. The platform aims to improve children's awareness of online safety and responsible digital behavior through educational adventures, interactive questions, pre- and post-assessments, points, levels, and badges.\n\nThe system also allows parents to follow their children’s progress and provides administrators with tools to manage students, educational content, questions, assessments, and activities.",
 
-    socials: {}
+    socials: {
+      github: "https://github.com/saifjeb/Amanak-Alraqami"
+    }
   },
 
   {
     match: "علي حرب",
     fullName: "علي فراس حرب",
 
-    modalAvatar: "",
+    modalAvatar: "56.png",
 
     projectLogo: "علي حرب.png",
 
@@ -385,19 +381,22 @@ const gce2026Students = [
     description:
       "منصة B2B تساعد المشاريع الصغيرة على الشراء بسعر الجملة، عن طريق تجميع طلباتها مع محلات صغيرة أخرى ضمن سلات شراء مُجدولة ومُنسّقة مسبقًا مع موردين شركاء، دون الحاجة لرأس مال أو مخزون كبير من المنصة نفسها.",
 
-    socials: {}
+    socials: {
+      github: "https://github.com/AliFH23",
+      linkedin: "https://www.linkedin.com/in/ali-harb-17527a294?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+    }
   },
 
   {
     match: "منار عبيدات",
     fullName: "منار اسلام عبيدات",
 
-    modalAvatar: "",
+    modalAvatar: "65.png",
 
     projectLogo:
       "منار اسلام عبيدات.png",
 
-    project: "منصة الحصاد المستدام",
+    project: "Harvest",
 
     description:
       "An interactive web platform that connects agricultural surplus rescue with smart farming education in schools and homes, aiming to enhance food and water security and reduce waste.",
@@ -412,7 +411,7 @@ const gce2026Students = [
     match: "عمار احميدان",
     fullName: "عمار ياسر احميدان",
 
-    modalAvatar: "",
+    modalAvatar: "57.png",
 
     projectLogo: "عمار احميدان.PNG",
 
@@ -436,7 +435,7 @@ const gce2026Students = [
     fullName:
       "جود محمد فرحان الشطناوي",
 
-    modalAvatar: "",
+    modalAvatar: "47.png",
 
     projectLogo:
       "جود محمد فرحان الشطناوي.png",
@@ -461,7 +460,7 @@ const gce2026Students = [
     fullName:
       "نادر ياسر صالح احميدان",
 
-    modalAvatar: "",
+    modalAvatar: "68.png",
 
     projectLogo: "نادر احميدان.jpg",
 
@@ -488,7 +487,7 @@ const gce2026Students = [
     modalAvatar: "",
 
     projectLogo:
-      "حنين شحادة العامري.png",
+      "حنين العامري.png",
 
     project: "AQUA",
 
@@ -506,7 +505,7 @@ const gce2026Students = [
 
     fullName: "محمد هايل الحمود",
 
-    modalAvatar: "",
+    modalAvatar: "63.png",
 
     projectLogo:
       "محمد هايل الحمود.png",
@@ -529,7 +528,7 @@ const gce2026Students = [
     fullName:
       "سيف الدين هاني بني سلامه",
 
-    modalAvatar: "",
+    modalAvatar: "51.png",
 
     projectLogo:
       "سيف الدين بني سلامة.png",
@@ -541,7 +540,8 @@ const gce2026Students = [
 
     socials: {
       linkedin:
-        "https://www.linkedin.com/in/saif-eddin-bani-salameh‏-2374a92b2?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+        "https://www.linkedin.com/in/saif-eddin-bani-salameh‏-2374a92b2?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+      github: "https://github.com/SaifEddine8"
     }
   },
 
@@ -551,7 +551,7 @@ const gce2026Students = [
     fullName:
       "مدين حازم اللطايفه",
 
-    modalAvatar: "",
+    modalAvatar: "64.png",
 
     projectLogo: "مدين طلايفة.png",
 
@@ -575,7 +575,7 @@ const gce2026Students = [
     fullName:
       "حمزة فواز الشرعة",
 
-    modalAvatar: "",
+    modalAvatar: "48.png",
 
     projectLogo: "حمزة الشرعة.jpeg",
 
@@ -586,7 +586,8 @@ const gce2026Students = [
 
     socials: {
       linkedin:
-        "https://www.linkedin.com/in/hamzeh-alshraah-7b0629369?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+        "https://www.linkedin.com/in/hamzeh-alshraah-7b0629369?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+      github: "https://github.com/HamzehAlshraah"
     }
   },
 
@@ -595,9 +596,9 @@ const gce2026Students = [
 
     fullName: "لينا سامر حجازي",
 
-    modalAvatar: "",
+    modalAvatar: "61.png",
 
-    projectLogo: "لينا حجازي.jpeg",
+    projectLogo: "لينا حجازي.png",
 
     project:
       "غراس | Little Minds Online",
@@ -623,7 +624,7 @@ const gce2026Students = [
     fullName:
       "كامل محمود بطاينه",
 
-    modalAvatar: "",
+    modalAvatar: "59.png",
 
     projectLogo: "كامل بطاينة.png",
 
@@ -635,25 +636,9 @@ const gce2026Students = [
 
     socials: {
       linkedin:
-        "https://www.linkedin.com/in/kamel-bataineh-a66a773b5?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+        "https://www.linkedin.com/in/kamel-bataineh-a66a773b5?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+      github: "https://github.com/kamelbataineh"
     }
-  },
-
-  {
-    match: "هند ابو حسين",
-
-    fullName: "هند ابو حسين",
-
-    modalAvatar: "",
-
-    projectLogo: "",
-
-    project: "برزنتيشن",
-
-    description:
-      "تفاصيل المشروع قريبًا.",
-
-    socials: {}
   }
 ];
 
@@ -952,15 +937,7 @@ function gceOpenStudentDetails(
     );
   }
 
-  // Source Code if available
-  if (student.socials?.source) {
-    socialLinks.push(
-      gceSocialLink(
-        "source",
-        student.socials.source
-      )
-    );
-  }
+
 
   modal.querySelector(
     ".student-modal-links"
@@ -1336,7 +1313,8 @@ const gceWhisperCrew = [
 
     socials: {
       github:
-        "https://github.com/m7mddd066ll-pixel"
+        "https://github.com/m7mddd066ll-pixel",
+      linkedin: "https://www.linkedin.com/in/mohammad-almomani-76030a3b8?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
     }
   },
 
@@ -1367,7 +1345,9 @@ const gceWhisperCrew = [
   {
     match: "عمر القرعان",
 
-    socials: {}
+    socials: {
+      github: "https://github.com/omar-cys"
+    }
   }
 ];
 
