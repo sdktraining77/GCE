@@ -1,24 +1,24 @@
-const heroBg    = document.getElementById('heroBg');
+const heroBg = document.getElementById('heroBg');
 const thumbRail = document.getElementById('thumbRail');
-const heroPrev  = document.getElementById('heroPrev');
-const heroNext  = document.getElementById('heroNext');
+const heroPrev = document.getElementById('heroPrev');
+const heroNext = document.getElementById('heroNext');
 
 // Keep your images (unchanged)
 const slide = [
   { image: "../image/img1.png" },
-   { image: "../image/img2.png" },
+  { image: "../image/img2.png" },
   { image: "../image/img3.png" },
-   { image: "../image/img4.png" },
+  { image: "../image/img4.png" },
   { image: "../image/img5.png" },
-   { image: "../image/img6.png" },
+  { image: "../image/img6.png" },
   { image: "../image/img7.png" },
-   { image: "../image/img8.png" },
+  { image: "../image/img8.png" },
   { image: "../image/img9.png" },
-     { image: "../image/img16.png" },
+  { image: "../image/img16.png" },
   { image: "../image/img17.png" },
-   { image: "../image/img18.png" },
+  { image: "../image/img18.png" },
   { image: "../image/img20.png" },
-   { image: "../image/img21.png" },
+  { image: "../image/img21.png" },
 
 ];
 
@@ -27,7 +27,7 @@ let currentIndex = 0;
 function paintHero() {
   heroBg.style.backgroundImage = `url('${slide[currentIndex].image}')`;
   // update active thumb
-  document.querySelectorAll('.thumb').forEach((t,i)=>{
+  document.querySelectorAll('.thumb').forEach((t, i) => {
     t.classList.toggle('active', i === currentIndex);
   });
 }
@@ -46,23 +46,23 @@ function buildThumbs() {
 buildThumbs();
 paintHero();
 
-heroPrev?.addEventListener('click', ()=>{
+heroPrev?.addEventListener('click', () => {
   currentIndex = (currentIndex - 1 + slide.length) % slide.length;
   paintHero();
 });
-heroNext?.addEventListener('click', ()=>{
+heroNext?.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % slide.length;
   paintHero();
 });
 
 // Auto advance every 3s (same behavior)
-setInterval(()=>{ currentIndex = (currentIndex + 1) % slide.length; paintHero(); }, 3000);
+setInterval(() => { currentIndex = (currentIndex + 1) % slide.length; paintHero(); }, 3000);
 
 
 
 
-var leftarrow  = document.getElementById('left-arrow');   
-var rightarrow = document.getElementById('right-arrow');  
+var leftarrow = document.getElementById('left-arrow');
+var rightarrow = document.getElementById('right-arrow');
 
 var data = [
   { p: "شكرا كثير على الكلام الجميل وشكرا الكوا على هذا ال event صراحة تعلمت منه كثير شغلات بالتوفيق للجميع يارب" },
@@ -73,7 +73,7 @@ var data = [
   { p: "يسعدكم يارب و بشكركم على هاي الفرصة الجميلة و التنظيم الرائع أكيد مش رح أنسى اشارك بهذه التجربة ان شاء الله" },
   { p: "شكرًا جزيلاً مس انسام كل هذا الانجاز لولا وجودكم و دعمكم المستمر، يعطيكم العافية و يبارك فرداً فرداً ❤️" },
 
- 
+
   { p: "كل شي صار بفضلكم الله يعافيكم وافتنت جميل جدا❤️" },
   { p: "شكرااااا جد كنتو احسن مدربين ومس مسات يعطيكم الف عافيه❤️" },
   { p: "يعطيكم الف عافيه يارب 🥺، كان يوم جد بجنن، وشكراً كثير الكم مس جد ما قصرتو معنا من بداية الكورس ❤️❤️❤️🌸" },
@@ -85,11 +85,11 @@ var data = [
 
 
 const cards = document.querySelectorAll('#review-card .feedback-card');
-let counter = 3; 
+let counter = 3;
 
 leftarrow.addEventListener('click', function () {
   if (counter - 3 <= 0) {
-    counter=data.length+3
+    counter = data.length + 3
     return;
   }
   counter -= 3;
@@ -101,7 +101,7 @@ leftarrow.addEventListener('click', function () {
 
 rightarrow.addEventListener('click', function () {
   if (counter + 3 > data.length) {
-    counter=0
+    counter = 0
     return;
   }
   for (let i = 0; i < 3; i++) {
@@ -112,6 +112,6 @@ rightarrow.addEventListener('click', function () {
 });
 
 setInterval(function () {
-  currentIndex = (currentIndex + 1) % slide.length; 
+  currentIndex = (currentIndex + 1) % slide.length;
   updateImage();
 }, 3000);

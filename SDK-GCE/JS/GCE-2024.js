@@ -1,26 +1,26 @@
-const heroBg    = document.getElementById('heroBg');
+const heroBg = document.getElementById('heroBg');
 const thumbRail = document.getElementById('thumbRail');
-const heroPrev  = document.getElementById('heroPrev');
-const heroNext  = document.getElementById('heroNext');
+const heroPrev = document.getElementById('heroPrev');
+const heroNext = document.getElementById('heroNext');
 
 // Keep your images (unchanged)
 const slide = [
-  { image: "../image/img24.png" }, 
-  { image: "../image/img25.png" }, 
-  { image: "../image/img26.png" }, 
-  { image: "../image/img27.png" }, 
-  { image: "../image/img28.png" }, 
+  { image: "../image/img24.png" },
+  { image: "../image/img25.png" },
+  { image: "../image/img26.png" },
+  { image: "../image/img27.png" },
+  { image: "../image/img28.png" },
   { image: "../image/img30.png" },
   { image: "../image/img31.png" },
- { image: "../image/img10.png" },
+  { image: "../image/img10.png" },
   { image: "../image/img11.png" },
   { image: "../image/img12.png" },
   { image: "../image/img13.png" },
   { image: "../image/img14.png" },
   { image: "../image/img15.png" },
-    { image: "../image/img40.png" },
+  { image: "../image/img40.png" },
   { image: "../image/img41.png" },
- { image: "../image/img42.png" },
+  { image: "../image/img42.png" },
   { image: "../image/img43.png" },
   { image: "../image/img44.png" },
   { image: "../image/img45.png" },
@@ -35,7 +35,7 @@ let currentIndex = 0;
 function paintHero() {
   heroBg.style.backgroundImage = `url('${slide[currentIndex].image}')`;
   // update active thumb
-  document.querySelectorAll('.thumb').forEach((t,i)=>{
+  document.querySelectorAll('.thumb').forEach((t, i) => {
     t.classList.toggle('active', i === currentIndex);
   });
 }
@@ -54,23 +54,23 @@ function buildThumbs() {
 buildThumbs();
 paintHero();
 
-heroPrev?.addEventListener('click', ()=>{
+heroPrev?.addEventListener('click', () => {
   currentIndex = (currentIndex - 1 + slide.length) % slide.length;
   paintHero();
 });
-heroNext?.addEventListener('click', ()=>{
+heroNext?.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % slide.length;
   paintHero();
 });
 
 // Auto advance every 3s (same behavior)
-setInterval(()=>{ currentIndex = (currentIndex + 1) % slide.length; paintHero(); }, 3000);
+setInterval(() => { currentIndex = (currentIndex + 1) % slide.length; paintHero(); }, 3000);
 
 
 
 
-var leftarrow  = document.getElementById('left-arrow');   
-var rightarrow = document.getElementById('right-arrow');  
+var leftarrow = document.getElementById('left-arrow');
+var rightarrow = document.getElementById('right-arrow');
 
 var data = [
   { p: "شكرا كثير على الكلام الجميل وشكرا الكوا على هذا ال event صراحة تعلمت منه كثير شغلات بالتوفيق للجميع يارب" },
@@ -81,7 +81,7 @@ var data = [
   { p: "يسعدكم يارب و بشكركم على هاي الفرصة الجميلة و التنظيم الرائع أكيد مش رح أنسى اشارك بهذه التجربة ان شاء الله" },
   { p: "شكرًا جزيلاً مس انسام كل هذا الانجاز لولا وجودكم و دعمكم المستمر، يعطيكم العافية و يبارك فرداً فرداً ❤️" },
 
- 
+
   { p: "كل شي صار بفضلكم الله يعافيكم وافتنت جميل جدا❤️" },
   { p: "شكرااااا جد كنتو احسن مدربين ومس مسات يعطيكم الف عافيه❤️" },
   { p: "يعطيكم الف عافيه يارب 🥺، كان يوم جد بجنن، وشكراً كثير الكم مس جد ما قصرتو معنا من بداية الكورس ❤️❤️❤️🌸" },
@@ -93,11 +93,11 @@ var data = [
 
 
 const cards = document.querySelectorAll('#review-card .feedback-card');
-let counter = 3; 
+let counter = 3;
 
 leftarrow.addEventListener('click', function () {
   if (counter - 3 <= 0) {
-    counter=data.length+3
+    counter = data.length + 3
     return;
   }
   counter -= 3;
@@ -109,7 +109,7 @@ leftarrow.addEventListener('click', function () {
 
 rightarrow.addEventListener('click', function () {
   if (counter + 3 > data.length) {
-    counter=0
+    counter = 0
     return;
   }
   for (let i = 0; i < 3; i++) {
@@ -120,6 +120,6 @@ rightarrow.addEventListener('click', function () {
 });
 
 setInterval(function () {
-  currentIndex = (currentIndex + 1) % slide.length; 
+  currentIndex = (currentIndex + 1) % slide.length;
   updateImage();
 }, 3000);
